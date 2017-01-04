@@ -1,0 +1,158 @@
+$color_yellow: #FFC857
+$color_blue: #2E4052
+$color_white: #EEEFEA
+$color_grey: #333
+
+$font-base-size: 10px
+$max_content_width : 768px
+
+*
+  // border: solid 1px
+  position: relative
+  user-select: none
+  box-sizing: border-box
+  
+@mixin size($w, $h)
+  width: $w
+  height: $h
+  
+body, html
+  padding: 0px
+  margin: 0px
+  
+.max_width
+  max-width: $max_content_width
+  margin-left: auto
+  margin-right: auto
+  
+.content
+  font-family: 'Fjalla One', sans-serif, 微軟正黑體
+  padding: 50px
+  
+  & h5
+    margin-top: 10px
+    
+  & .title_hr
+    border: solid 3px $color_yellow
+    width: 100px
+    
+  & h1
+    font-size: $font-base-size*4
+  & h2
+    font-size: $font-base-size*3
+  & h3
+    font-size: $font-base-size*2
+  
+  & h1.second_title
+    font-size: $font-base-size*2.4
+  & h2.second_title
+    font-size: $font-base-size*1.6
+  & h3.second_title
+    font-size: $font-base-size*1.2
+    
+  & .second_title
+    margin-top: -15px
+    
+  & .button
+    padding: 5px 25px
+    display: inline-block
+    margin-right: 10px
+    letter-spacing: 2px
+    font-size: $font-base-size*1.5
+    font-weight: bold
+    border: solid 2px white
+    
+  & .buttonA
+    background-color: $color_yellow
+    color: black
+    cursor: pointer
+    transition: 0.1s
+    
+    &:hover
+      box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.35)
+      transform: translate(2%, -2%)
+      
+    
+  & .buttonB
+    background-color: $color_blue
+    cursor: pointer
+    transition: 0.1s
+    
+    &:hover
+      box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.35)
+      transform: translate(2%, -2%)
+
+  & .buttonC
+    background-color: $color_white
+    color: black
+    cursor: pointer
+    transition: 0.1s
+    
+    &:hover
+      box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.35)
+      transform: translate(2%, -2%)
+    
+  & .color_chip
+    display: inline-block
+    margin-right: 25px
+    & .color_block, & .color_tag
+      display: inline-block
+      vertical-align: middle
+    & .color_tag
+      width: 70px
+    & .color_block
+      +size(50px, 50px)
+      border: solid 3px
+    & .block_yellow
+      background-color: $color_yellow
+    & .block_blue
+      background-color: $color_blue
+    & .block_white
+      background-color: $color_white
+    & .block_grey
+      background-color: $color_grey
+  
+.content_blue
+  background-color: $color_blue
+  color: $color_white
+
+  & .second_title
+    color: $color_yellow
+
+  & h1, & h2, & h3
+    font-weight: 500
+    
+.content_grey
+  background-color: $color_grey
+  color: $color_white
+
+  & .second_title
+    color: $color_yellow
+
+  & h1, & h2, & h3
+    font-weight: 500
+    
+  & .buttonC
+    background-color: $color_grey
+    color: $color_white
+    
+.content_white
+  background-color: $color_white
+  color: $color_blue
+
+  & .title_hr
+    border-color: $color_blue
+  
+  & .second_title
+    color: $color_grey
+  
+  & .color_block
+    border-color: $color_grey
+    
+  & .button
+    border-color: $color_grey
+    
+  & .buttonB
+    color: $color_white
+    
+    

@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.max_width {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  font-family: "Fjalla One", sans-serif, 微軟正黑體;
+  padding: 50px;
+}
+.content h5 {
+  margin-top: 10px;
+}
+.content .title_hr {
+  border: solid 3px #FFC857;
+  width: 100px;
+}
+.content h1 {
+  font-size: 40px;
+}
+.content h2 {
+  font-size: 30px;
+}
+.content h3 {
+  font-size: 20px;
+}
+.content h1.second_title {
+  font-size: 24px;
+}
+.content h2.second_title {
+  font-size: 16px;
+}
+.content h3.second_title {
+  font-size: 12px;
+}
+.content .second_title {
+  margin-top: -15px;
+}
+.content .button {
+  padding: 5px 25px;
+  display: inline-block;
+  margin-right: 10px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bold;
+  border: solid 2px white;
+}
+.content .buttonA {
+  background-color: #FFC857;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.content .buttonA:hover {
+  box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.35);
+  -webkit-transform: translate(2%, -2%);
+          transform: translate(2%, -2%);
+}
+.content .buttonB {
+  background-color: #2E4052;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.content .buttonB:hover {
+  box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.35);
+  -webkit-transform: translate(2%, -2%);
+          transform: translate(2%, -2%);
+}
+.content .buttonC {
+  background-color: #EEEFEA;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+.content .buttonC:hover {
+  box-shadow: -5px 5px 2px 2px rgba(0, 0, 0, 0.35);
+  -webkit-transform: translate(2%, -2%);
+          transform: translate(2%, -2%);
+}
+.content .color_chip {
+  display: inline-block;
+  margin-right: 25px;
+}
+.content .color_chip .color_block, .content .color_chip .color_tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content .color_chip .color_tag {
+  width: 70px;
+}
+.content .color_chip .color_block {
+  width: 50px;
+  height: 50px;
+  border: solid 3px;
+}
+.content .color_chip .block_yellow {
+  background-color: #FFC857;
+}
+.content .color_chip .block_blue {
+  background-color: #2E4052;
+}
+.content .color_chip .block_white {
+  background-color: #EEEFEA;
+}
+.content .color_chip .block_grey {
+  background-color: #333;
+}
+
+.content_blue {
+  background-color: #2E4052;
+  color: #EEEFEA;
+}
+.content_blue .second_title {
+  color: #FFC857;
+}
+.content_blue h1, .content_blue h2, .content_blue h3 {
+  font-weight: 500;
+}
+
+.content_grey {
+  background-color: #333;
+  color: #EEEFEA;
+}
+.content_grey .second_title {
+  color: #FFC857;
+}
+.content_grey h1, .content_grey h2, .content_grey h3 {
+  font-weight: 500;
+}
+.content_grey .buttonC {
+  background-color: #333;
+  color: #EEEFEA;
+}
+
+.content_white {
+  background-color: #EEEFEA;
+  color: #2E4052;
+}
+.content_white .title_hr {
+  border-color: #2E4052;
+}
+.content_white .second_title {
+  color: #333;
+}
+.content_white .color_block {
+  border-color: #333;
+}
+.content_white .button {
+  border-color: #333;
+}
+.content_white .buttonB {
+  color: #EEEFEA;
+}
